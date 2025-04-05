@@ -11,8 +11,9 @@
 	<groupId>com.msilva</groupId>
 	<artifactId>cakedesigner</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>cakedesigner</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Project for a Cake Designer</description>
 	<url/>
 	<licenses>
 		<license/>
