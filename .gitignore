@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Ignorar todas as imagens da pasta images/
+src/main/resources/static/images/*
+

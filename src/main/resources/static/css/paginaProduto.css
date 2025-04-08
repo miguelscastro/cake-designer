@@ -45,13 +45,10 @@ header, footer {
     justify-content: space-between;
     background-color: var(--header-color);
     padding: 1%;
-    height: 116px;
+    height: 120px;
     width: 1440px;
 
 }
-
-
-
 
 .logo-config {
     align-items: center;
