@@ -45,7 +45,7 @@ header, footer {
 #header-config,
 #footer-config {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: var(--header-color);
     max-width: 1440px;
     padding: 1%;
@@ -152,14 +152,15 @@ h1 {
 #produtos-container {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 5rem;
     gap: 2.5rem;
-    justify-content: center;
+    /* justify-content: space-evenly; */
     margin: 2rem auto;
-    width: 1440px;
+    max-width: 1440px;
 }
 
 #produto-card {
-    width: 310px;
+    width: 250px;
     background-color: var(--secondary-color);
     padding: 15px;
     margin: 10px;
@@ -169,8 +170,8 @@ h1 {
 }
 
 #produto-card img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -201,7 +202,7 @@ h1 {
 /* Media Queries para Resoluções Diferentes */
 /* Padrão (1920x1080) */
 @media (min-width: 1920px) {
-    #produto-card {
+    /* #produto-card {
         width: 20%;
     }
 
@@ -213,12 +214,12 @@ h1 {
     #produto-card a {
         font-size: 1.3rem;
         padding: 2.5%;
-    }
+    } */
 }
 
 /* Resolução Média (1440x900) */
 @media (max-width: 1440px) and (min-width: 1366px) {
-    #produto-card {
+    /* #produto-card {
         width: 20%;
     }
 
@@ -230,12 +231,12 @@ h1 {
     #produto-card a {
         font-size: 1.1rem;
         padding: 2%;
-    }
+    } */
 }
 
 /* Resolução Pequena (1280x720) */
 @media (max-width: 1280px) and (min-width: 1024px) {
-    #produto-card {
+    /* #produto-card {
         width: 30%;
     }
 
@@ -247,5 +248,5 @@ h1 {
     #produto-card a {
         font-size: 1rem;
         padding: 1.5%;
-    }
+    } */
 }
