@@ -28,9 +28,6 @@ a {
     text-decoration: none;
 }
 
-main {
-    flex: 1;
-}
 
 /* Navegador e elementos do header, footer */
 header, footer {
@@ -38,7 +35,7 @@ header, footer {
     display: flex;
     justify-content: center;
     background-color: var(--header-color);
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 
 }
 
@@ -47,10 +44,14 @@ header, footer {
     display: flex;
     justify-content: space-between;
     background-color: var(--header-color);
-    width: 1440px;
     padding: 1%;
     height: 116px;
+    width: 1440px;
+
 }
+
+
+
 
 .logo-config {
     align-items: center;
@@ -112,91 +113,40 @@ header, footer {
     font-size: 120%;
 }
 
-/* Configurações do carrossel */
-#banner {
-    position: relative;
-    width: 100%;
-    max-width: 1440px;
-
-    margin: 0 auto;
-    padding: 0;
-
-    /* margin: 0.2% 0; */
-    background-color: var(--carousel-background);
-    /* border-bottom: 10px solid var(--background-color); */
-    /* border-top: 3px solid var(--background-color); */
-    overflow: hidden;
-
-    border-radius: 8px;
-}
-
-#banner .carrossel-item {
-    flex: 0 0 100%;
-    width: 1440px;
-    height: 600px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-h1 {
+/* Estilos da box do produto */
+main {
     display: flex;
     justify-content: center;
+    flex: 1;
+    height: calc(100vh - 240px);
+}
+
+main>div {
+    display: flex;
+
     background-color: var(--secondary-color);
     color: var(--background-color);
+
+    margin: 5rem;  
+    
+    border-radius: 8px;
+}
+
+main>div div {
     padding: 1.5%;
+
+}
+
+main>div img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem;
+}
+main>div h1 {
     margin: 2rem auto ;
-    max-width: 1440px;
     border-radius: 8px;
 }
-
-/* estilos dos cards de produto */
-#produtos-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 5rem;
-    gap: 2.5rem;
-    /* justify-content: space-evenly; */
-    margin: 2rem auto;
-    max-width: 1440px;
+main>div p {
+font-size: 150%;
 }
-
-#produto-card {
-    width: 250px;
-    background-color: var(--secondary-color);
-    padding: 15px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-#produto-card img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-#produto-card p {
-    text-align: left;
-    background-color: var(--background-color);
-    color: var(--carousel-background);
-    padding: 1%;
-    margin-bottom: 5%;
-    border-radius: 10px;
-    width: 15%;
-
-
-}
-
-#produto-card a {
-    display: block;
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: var(--carousel-background);
-    background-color: var(--background-color);
-    padding: 2%;
-    border: 1px solid var(--secondary-color);
-    border-radius: 10px;
-}
-

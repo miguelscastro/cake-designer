@@ -42,7 +42,7 @@ public class ProdutoController {
         ProdutoService ps = context.getBean(ProdutoService.class);
 
         List<Map<String, Object>> listaProdutos = ps.obterTodosProdutos();
-        model.addAttribute("listaProdutos",listaProdutos);
+        model.addAttribute("listaProdutos", listaProdutos);
         switch (produto) {
             case "bolos":
                 return "bolos";
@@ -55,6 +55,20 @@ public class ProdutoController {
             default:
                 return "index";
         }
+    }
+
+    @GetMapping("/{produto}/{idProduto:\\d+}")
+    public String carregarPerfilProduto(Model model,
+            @PathVariable String produto,
+            @PathVariable int idProduto) {
+        ProdutoService ps = context.getBean(ProdutoService.class);
+        Produto prod = ps.obterProduto(idProduto);
+
+        if (prod == null)
+            return "redirect:/erro";
+
+        model.addAttribute("produto", prod);
+        return "paginaProduto";
     }
 
     @GetMapping("/listarImagens")
